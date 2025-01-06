@@ -1,0 +1,2 @@
+main:		#202938
+secondary:	#dfd6c7
