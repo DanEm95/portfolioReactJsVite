@@ -18,7 +18,7 @@ function App() {
 
       {/* Header */}
       <header className="grid grid-cols-1 md:grid-cols-2">
-        <img src="../public/Assets/headshot.png" className="p-20 md:p-32" />
+        <img src="Assets/headshot.png" className="p-20 md:p-32" />
         <div className="text flex flex-col items-center text-center md:text-start md:items-start gap-5 justify-center p-20 md:p-32 md:pl-10">
           <div className="text-7xl font-bold">Hi, I'm Daniel!</div>
           <div className="text-xl text-gray-300">
@@ -95,7 +95,7 @@ function App() {
               </button>
 
             </div>
-            <img src="../public/Assets/hero-image.png" className="p-20" />
+            <img src="/Assets/hero-image.png" className="p-20" />
           </div>
         </div>
       </section>
