@@ -1,16 +1,18 @@
+import './App.css';
+
 function App() {
   return (
     // h-[100vh]
-    <main className="bg-gray-800 text-white"> 
+    <main className="bg-custom text-custom">
 
 
       {/* Navbar */}
-      <nav className="border-b flex justify-between items-center p-5 md:px-10">
+      <nav id="name" className="border-b flex justify-between items-center p-5 md:px-10">
         <div className="text-xl md:text-2xl font-bold">Daniel Malychko</div>
         <ul className="flex justify-between items-center gap-10">
-          <a href="" className="text-sm md:text-xl">Home</a>
-          <a href="" className="text-sm md:text-xl">Projects</a>
-          <a href="" className="text-sm md:text-xl">About</a>
+          <a href="#name" className="text-sm md:text-xl">Home</a>
+          <a href="#projects" className="text-sm md:text-xl">Projects</a>
+          <a href="#about" className="text-sm md:text-xl">About</a>
         </ul>
       </nav>
       {/* Navbar */}
@@ -26,7 +28,7 @@ function App() {
             Working towards creating software that makes life easier<br />
             and more meaningful.
           </div>
-          <button className="bg-green-700 p-3 px-6 rounded-lg hover:bg-green-900 transition">
+          <button className="button-custom p-3 px-6 rounded-lg hover:bg-green-900 transition">
             Projects
           </button>
         </div>
@@ -40,7 +42,7 @@ function App() {
 
 
       {/* About Me */}
-      <section className="p-10 md:p-32">
+      <section id="about" className="p-10 md:p-32">
         <div className="text-4xl text-center font-bold">About Me</div>
         <div className="grid grid-cols-1 md:grid-cols-2 py-10">
 
@@ -63,34 +65,31 @@ function App() {
           <div className="2">
             <div className="text-xl font-bold">My Skills!</div>
             <div className="flex flex-wrap py-3 space-x-3 gap-4">
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 HTML
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 CSS
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 JAVASCRIPT
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 REACT JS
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
-                NEXT JS
-              </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 GIT
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 PYTHON
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 FLASK
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 OPENEDGE
               </button>
-              <button className="bg-green-700 hover:bg-green-900 p-3 rounded-md text-gray-200 px-5">
+              <button className="button-custom p-3 rounded-md px-5">
                 C#
               </button>
 
@@ -103,7 +102,7 @@ function App() {
 
 
       {/* Projects */}
-      <section className="p-10 md:px-32">
+      <section id="projects" className="p-10 md:px-32">
         <div className="text-4xl text-center font-bold">Projects</div>
           <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-5 space-y-5">
             <img src="/Assets/passwordManager.png" className="rounded-2xl" />
@@ -113,7 +112,7 @@ function App() {
                 passwordManager is a simple Python application that helps you securely store and manage your passwords.
               </div>
               <div className="flex">
-                <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" />
+                <a href="https://github.com/DanEm95/passwordManager" target="_blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
@@ -129,10 +128,10 @@ function App() {
                 blogWithUsers is a Python web application that enables global communication where users share thoughts, stories and connections through an intuitive digital interface.
               </div>
               <div className="flex">
-                <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" />
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                <a href="https://github.com/DanEm95/blogWithUsers" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
+                <a href="https://my-amazing-blog-with-users.onrender.com/" target="__blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                </svg>
+                </svg></a>
               </div>
             </div>
           </div>
@@ -145,7 +144,7 @@ function App() {
                 The php-mysql-website is a MVC3 based web application that uses PHP for backend logic and XAMPP MySQL-PDO for database management, with structured user and admin areas while still under development.
               </div>
               <div className="flex">
-                <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" />
+                <a href="https://github.com/DanEm95/php-mysql-website"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
@@ -164,7 +163,7 @@ function App() {
       <div className="flex justify-between items-center p-10 px-32">
         <div className="">© 2025 Daniel Malychko</div>
         <div className="">
-          <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-7 w-7 rounded-full" />
+          <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-6 w-6 rounded-full" />
         </div>
       </div>
       {/* Footer */}

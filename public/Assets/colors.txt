@@ -1,2 +1,11 @@
-main:		#202938
-secondary:	#dfd6c7
+main:		#202837
+secondaryText:	#D2D9E5
+thirdButtons:	#d3b34f <-- hoverColor: #a98f3f
+
+
+
+projectBGColors
+1 -> #d3b34f
+2 -> #6b6099
+3 -> #586d96
+4 -> #9f789d
