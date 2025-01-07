@@ -12,7 +12,7 @@ function App() {
       <header className="dark css-1ryjgam border-b">
       <nav className="flex justify-between items-center p-5 md:px-10">
         <div className="text-xl md:text-2xl font-bold">Daniel Malychko</div>
-        <ul className="flex justify-between items-center gap-6">
+        <ul className="flex justify-between items-center gap-2">
           <a href="#projects" className="btn-new silent dark-mode"><span className="css-17qgsod">Projects</span></a>
           <a href="#about" className="btn-new silent dark-mode"><span className="css-17qgsod">About</span></a>
           <a href="#home" className="btn-new primary-dark"><span className="css-17qgsod">Home</span></a>
