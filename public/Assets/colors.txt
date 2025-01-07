@@ -1,8 +1,7 @@
-main:		#202837
+main:		#1f1633
 secondaryText:	#D2D9E5
-thirdButtons:	#d3b34f <-- hoverColor: #a98f3f
 
-
+bgColorDiv className css-1ytyau7
 
 projectBGColors
 1 -> #d3b34f

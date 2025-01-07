@@ -1,4 +1,6 @@
+import './index.css';
 import './App.css';
+
 
 function App() {
   return (
@@ -7,19 +9,21 @@ function App() {
 
 
       {/* Navbar */}
-      <nav id="name" className="border-b flex justify-between items-center p-5 md:px-10">
+      <header className="dark css-1ryjgam border-b">
+      <nav className="flex justify-between items-center p-5 md:px-10">
         <div className="text-xl md:text-2xl font-bold">Daniel Malychko</div>
-        <ul className="flex justify-between items-center gap-10">
-          <a href="#name" className="text-sm md:text-xl">Home</a>
-          <a href="#projects" className="text-sm md:text-xl">Projects</a>
-          <a href="#about" className="text-sm md:text-xl">About</a>
+        <ul className="flex justify-between items-center gap-6">
+          <a href="#projects" className="btn-new silent dark-mode"><span className="css-17qgsod">Projects</span></a>
+          <a href="#about" className="btn-new silent dark-mode"><span className="css-17qgsod">About</span></a>
+          <a href="#home" className="btn-new primary-dark"><span className="css-17qgsod">Home</span></a>
         </ul>
       </nav>
+      </header>
       {/* Navbar */}
 
 
       {/* Header */}
-      <header className="grid grid-cols-1 md:grid-cols-2">
+      <header id="home" className="grid grid-cols-1 md:grid-cols-2 css-1ytyau7">
         <img src="Assets/headshot.png" className="p-20 md:p-32" />
         <div className="text flex flex-col items-center text-center md:text-start md:items-start gap-5 justify-center p-20 md:p-32 md:pl-10">
           <div className="text-7xl font-bold">Hi, I'm Daniel!</div>
@@ -28,9 +32,7 @@ function App() {
             Working towards creating software that makes life easier<br />
             and more meaningful.
           </div>
-          <button className="button-custom p-3 px-6 rounded-lg hover:bg-green-900 transition">
-            Projects
-          </button>
+          <a className="btn-new secondary-dark" href="#projects"><span className="css-17qgsod">Projects</span></a>
         </div>
       </header>
       <div className="flex justify-center items-center">
@@ -44,58 +46,49 @@ function App() {
       {/* About Me */}
       <section id="about" className="p-10 md:p-32">
         <div className="text-4xl text-center font-bold">About Me</div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 py-10">
 
           <div className="flex flex-col gap-3">
-            <div className="text-xl font-bold">Get to know me!</div>
-            <div className="text-lg text-gray-300">
-              Hi, my name is Daniel Malychko and I am a highly ambitious, self-motivated and driven software engineer.
-            </div >
-            <div className="text-lg text-gray-300">
-              I graduated from the IHK, Hamburg in 2025 as Computer Science Expert Subject Area: Software Development and have been working in this field ever since.
-            </div >
-            <div className="text-lg text-gray-300">
-              I have a wide range of hobbies and passions that keep me busy. From reading, sports, travelling to creating wonderful software, I am always looking for new experiences and love to keep myself busy and learn new things.
+            <div className="active css-10flozr">
+              <div className="outline"></div>
+              <div className="active css-5ootq8">
+                <div className="bg-white rounded-lg p-4 text-black">
+                    <div className="text-xl font-bold">Get to know me!</div>
+                    <div className="text-lg">
+                      Hi, my name is Daniel Malychko and I am a highly ambitious, self-motivated and driven software engineer.
+                    </div >
+                    <div className="text-lg">
+                      I graduated from the IHK, Hamburg in 2025 as Computer Science Expert Subject Area: Software Development and have been working in this field ever since.
+                    </div >
+                    <div className="text-lg">
+                      I have a wide range of hobbies and passions that keep me busy. From reading, sports, travelling to creating wonderful software, I am always looking for new experiences and love to keep myself busy and learn new things.
+                    </div>
+                    <div className="text-lg">
+                      I believe you should never stop growing and that's what I strive for, I have a passion for technology and a desire to push the boundaries of what is possible. I am excited to see where my career takes me and am always open to new opportunities 🙂!
+                    </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div className="text-lg text-gray-300">
-              I believe you should never stop growing and that's what I strive for, I have a passion for technology and a desire to push the boundaries of what is possible. I am excited to see where my career takes me and am always open to new opportunities 🙂!
-            </div>
-          </div>
 
-          <div className="2">
+
+          <div className="2 px-5 py-2">
             <div className="text-xl font-bold">My Skills!</div>
             <div className="flex flex-wrap py-3 space-x-3 gap-4">
-              <button className="button-custom p-3 rounded-md px-5">
-                HTML
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                CSS
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                JAVASCRIPT
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                REACT JS
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                GIT
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                PYTHON
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                FLASK
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                OPENEDGE
-              </button>
-              <button className="button-custom p-3 rounded-md px-5">
-                C#
-              </button>
-
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">HTML</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">CSS</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">JAVASCRIPT</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">REACT JS</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">GIT</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">PYTHON</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">FLASK</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">OPENEDGE</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">C#</span></a>
             </div>
             <img src="/Assets/hero-image.png" className="p-20" />
           </div>
+
         </div>
       </section>
       {/* About Me */}
@@ -144,7 +137,7 @@ function App() {
                 The php-mysql-website is a MVC3 based web application that uses PHP for backend logic and XAMPP MySQL-PDO for database management, with structured user and admin areas while still under development.
               </div>
               <div className="flex">
-                <a href="https://github.com/DanEm95/php-mysql-website"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
+                <a href="https://github.com/DanEm95/php-mysql-website" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
