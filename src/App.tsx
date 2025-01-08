@@ -1,9 +1,30 @@
+import { useEffect } from "react";
 import './index.css';
 import './App.css';
 
 
 function App() {
-  
+  // add fake historie to activate the browser back button
+  // if browser backbutton is clicked jump to the top of the page  
+  useEffect(() => {
+    window.history.pushState({ page: 1 }, "", window.location.href);
+
+    const handlePopState = () => {
+      const targetElement = document.getElementById("home");
+      if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+      window.history.pushState({ page: 1 }, "", window.location.href);
+    };
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
+
+  // prevent URL from changing when a href from a button is clicked
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute('href')?.slice(1);
@@ -15,9 +36,8 @@ function App() {
     }
   };
 
-  
+    
   return (
-    // h-[100vh]
     <main className="bg-custom text-custom">
 
       {/* Navbar */}
