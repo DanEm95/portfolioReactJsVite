@@ -3,19 +3,31 @@ import './App.css';
 
 
 function App() {
+  
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href')?.slice(1);
+    if (targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+  };
+
+  
   return (
     // h-[100vh]
     <main className="bg-custom text-custom">
-
 
       {/* Navbar */}
       <header className="dark css-1ryjgam border-b">
       <nav className="flex justify-between items-center p-5 md:px-10">
         <div className="text-xl md:text-2xl font-bold">Daniel Malychko</div>
         <ul className="flex justify-between items-center gap-2">
-          <a href="#projects" className="btn-new silent dark-mode"><span className="css-17qgsod">Projects</span></a>
-          <a href="#about" className="btn-new silent dark-mode"><span className="css-17qgsod">About</span></a>
-          <a href="#home" className="btn-new primary-dark"><span className="css-17qgsod">Home</span></a>
+          <a href="#projects" onClick={handleClick} className="btn-new silent dark-mode"><span className="css-17qgsod">Projects</span></a>
+          <a href="#about" onClick={handleClick} className="btn-new silent dark-mode"><span className="css-17qgsod">About</span></a>
+          <a href="#home" onClick= {handleClick} className="btn-new primary-dark"><span className="css-17qgsod">Home</span></a>
         </ul>
       </nav>
       </header>
@@ -32,7 +44,7 @@ function App() {
             Working towards creating software that makes life easier<br />
             and more meaningful.
           </div>
-          <a className="btn-new secondary-dark" href="#projects"><span className="css-17qgsod">Projects</span></a>
+          <a className="btn-new secondary-dark" href="#projects" onClick={handleClick}><span className="css-17qgsod">Projects</span></a>
         </div>
       </header>
       <div className="flex justify-center items-center">
