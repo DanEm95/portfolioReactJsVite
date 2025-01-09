@@ -130,7 +130,7 @@ function App() {
       <section id="projects" className="p-10 md:px-32">
         <div className="text-4xl text-center font-bold">Projects</div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-12 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-5 space-y-5">
             <div className="css-1i54mzy">
               <div className="css-9ofyvk eok8cxg2 snipcss0-3-3-9"><svg viewBox="0 0 68 251" fill="none" className="snipcss0-4-9-10">
                       <g clipPath="url(#clip0_360_14725)" className="snipcss0-5-10-11">
@@ -181,7 +181,7 @@ function App() {
         </div>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-12 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-5 space-y-5">
             <div className="css-1i54mzy">
               <div className="css-9ofyvk eok8cxg2 snipcss0-3-3-9"><svg viewBox="0 0 68 251" fill="none" className="snipcss0-4-9-10">
                       <g clipPath="url(#clip0_360_14725)" className="snipcss0-5-10-11">
@@ -234,7 +234,7 @@ function App() {
         </div>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-12 space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 py-10 space-x-5 space-y-5">
             <img src="/Assets/passwordManager.png" className="rounded-2xl" />
             <div className="text flex flex-col justify-center items-start gap-3">
               <div className="text-3xl font-bold">PHP MySql Website</div>
