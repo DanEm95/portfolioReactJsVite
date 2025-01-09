@@ -295,7 +295,25 @@ function App() {
       
       {/* footer */}
       <div className="px-10 md:px-32 pt-12">
-        <div className="border"></div>
+        {/* <div className="border"></div> */}
+        <div className="w-full overflow-hidden">
+          <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <line x1="0%" y1="50" x2="100%" y2="50" strokeWidth="4" strokeLinecap="round">
+              <animate 
+                attributeName="stroke" 
+                values="#FF4500;#FF1493;#8A2BE2;#FF4500" 
+                dur="4s" 
+                repeatCount="indefinite"/>
+              <animate 
+                attributeName="filter" 
+                // values="drop-shadow(0 0 5px #FF4500);drop-shadow(0 0 8px #FF1493);drop-shadow(0 0 5px #8A2BE2);drop-shadow(0 0 5px #FF4500)" 
+                dur="4s" 
+                repeatCount="indefinite"/>
+            </line>
+          </svg>
+      </div>
+
+ 
       </div>
       <div className="flex justify-between items-center p-10 px-32">
         <div className="">© 2025 Daniel Malychko</div>
