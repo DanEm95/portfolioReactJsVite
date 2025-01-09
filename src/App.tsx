@@ -104,9 +104,9 @@ function App() {
             </div>
 
 
-          <div className="2 px-8 py-2">
-            <div className="text-xl font-bold">My Skills!</div>
-            <div className="flex flex-wrap py-3 space-x-3 gap-4">
+          <div className="2 px-8 py-4 sm:py-0">
+            <div className="text-xl font-bold flex justify-center">My Skills!</div>
+            <div className="flex flex-wrap justify-center items-center gap-6 py-4">
               <a className="btn-new secondary-dark"><span className="css-17qgsod">HTML</span></a>
               <a className="btn-new secondary-dark"><span className="css-17qgsod">CSS</span></a>
               <a className="btn-new secondary-dark"><span className="css-17qgsod">JAVASCRIPT</span></a>
@@ -116,6 +116,7 @@ function App() {
               <a className="btn-new secondary-dark"><span className="css-17qgsod">FLASK</span></a>
               <a className="btn-new secondary-dark"><span className="css-17qgsod">OPENEDGE</span></a>
               <a className="btn-new secondary-dark"><span className="css-17qgsod">C#</span></a>
+              <a className="btn-new secondary-dark"><span className="css-17qgsod">PHP</span></a>
             </div>
             <img src="/Assets/hero-image.png" className="p-20" />
           </div>
