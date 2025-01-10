@@ -1,9 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import $ from 'jquery';
 import './index.css';
 import './App.css';
 
 
+
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
   // add fake historie to activate the browser back button
   // if browser backbutton is clicked jump to the top of the page  
   useEffect(() => {
@@ -22,7 +26,6 @@ function App() {
     };
   }, []);
 
-
   // prevent URL from changing when a href from a button is clicked
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
@@ -35,7 +38,37 @@ function App() {
     }
   };
 
-    
+
+  // changing header button logic
+  const getButtonClass = (section: string): string => {
+    return activeSection === section ? "btn-new primary-dark" : "btn-new silent dark-mode";
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'home', 'projects'];
+      
+      for (const section of sections) {
+        const $element = $(`#${section}`);
+        if ($element.offset()?.top && 
+            $element.offset()!.top - 100 < $(window).scrollTop()! && 
+            $element.offset()!.top + 100 > $(window).scrollTop()!) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    };
+
+    $(window).on('scroll', handleScroll);
+    handleScroll(); // Check initial state
+  
+    return () => {
+      $(window).off('scroll', handleScroll);
+    };
+  }, []);
+  
+
+  
   return (
     <main className="bg-custom text-custom">
 
@@ -44,9 +77,9 @@ function App() {
       <nav className="flex justify-between items-center p-5 md:px-10">
         <div className="text-xl md:text-2xl font-bold">Daniel Malychko</div>
         <ul className="flex justify-between items-center gap-2">
-          <a href="#projects" onClick={handleClick} className="btn-new silent dark-mode"><span className="css-17qgsod">Projects</span></a>
-          <a href="#about" onClick={handleClick} className="btn-new silent dark-mode"><span className="css-17qgsod">About</span></a>
-          <a href="#home" onClick= {handleClick} className="btn-new primary-dark"><span className="css-17qgsod">Home</span></a>
+          <a href="#projects" onClick={handleClick} className={getButtonClass('projects')}><span className="css-17qgsod">Projects</span></a>
+          <a href="#about" onClick={handleClick} className={getButtonClass('about')}><span className="css-17qgsod">About</span></a>
+          <a href="#home" onClick={handleClick} className={getButtonClass('home')}><span className="css-17qgsod">Home</span></a>
         </ul>
       </nav>
       </header>
