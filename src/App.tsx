@@ -7,7 +7,6 @@ import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-
   // add fake historie to activate the browser back button
   // if browser backbutton is clicked jump to the top of the page  
   useEffect(() => {
@@ -328,31 +327,37 @@ function App() {
       
       {/* footer */}
       <div className="px-10 md:px-32 pt-12">
-        {/* <div className="border"></div> */}
-        <div className="w-full overflow-hidden">
-          <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <line x1="0%" y1="50" x2="100%" y2="50" strokeWidth="4" strokeLinecap="round">
-              <animate 
-                attributeName="stroke" 
-                values="#FF4500;#FF1493;#8A2BE2;#FF4500" 
-                dur="4s" 
-                repeatCount="indefinite"/>
-              <animate 
-                attributeName="filter" 
-                // values="drop-shadow(0 0 5px #FF4500);drop-shadow(0 0 8px #FF1493);drop-shadow(0 0 5px #8A2BE2);drop-shadow(0 0 5px #FF4500)" 
-                dur="4s" 
-                repeatCount="indefinite"/>
-            </line>
-          </svg>
+        <div className="border" style={{
+          backgroundSize: '250% 100%',
+          border: '1.5px solid transparent',
+          borderImage: 'linear-gradient(120deg, #c83852, #b44092 25%, #6a5fc1 50%, #fa7faa, #ff9691) 1',
+          width: '100%',
+        }}>
+        </div>
       </div>
 
- 
-      </div>
       <div className="flex justify-between items-center p-10 px-32">
-        <div className="">© 2025 Daniel Malychko</div>
-        <div className="">
-          <img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-6 w-6 rounded-full" />
-        </div>
+        <div className="" style={{
+            background: 'linear-gradient(120deg, #c83852, #b44092 25%, #6a5fc1 50%, #fa7faa, #ff9691)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            // fontSize: '24px'
+          }}>© 2025 Daniel Malychko</div>
+
+          <div className="relative h-6 w-6">
+              <img 
+                  src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" 
+                  className="h-6 w-6 rounded-full" 
+                  style={{ position: 'absolute', top: 0, left: 0 }} 
+              />
+              <div 
+                  className="absolute inset-0 rounded-full" 
+                  style={{
+                      background: 'linear-gradient(120deg, #c83852, #b44092 25%, #6a5fc1 50%, #fa7faa, #ff9691)',
+                      opacity: 0.5
+                  }} 
+              />
+          </div>
       </div>
       {/* Footer */}
 
