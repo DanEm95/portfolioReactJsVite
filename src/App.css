@@ -625,3 +625,30 @@ svg {
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 436px) {
+  .custom-padding {
+    flex: auto;
+    justify-content: center;
+    font-size: small;
+    padding-left: 1rem !important;
+    padding-right: 1.1rem !important;
+  }
+}

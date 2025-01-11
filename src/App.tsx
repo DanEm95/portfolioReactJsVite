@@ -336,15 +336,10 @@ function App() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center p-10 px-32">
-        <div className="" style={{
-            background: 'linear-gradient(120deg, #c83852, #b44092 25%, #6a5fc1 50%, #fa7faa, #ff9691)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            // fontSize: '24px'
-          }}>© 2025 Daniel Malychko</div>
+      <div className="flex justify-center items-center p-10 px-32 custom-padding">
+        <div className="">Developed and designed with love ❤️ Daniel Malychko</div>
 
-          <div className="relative h-6 w-6">
+          {/* <div className="relative h-6 w-6">
               <img 
                   src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" 
                   className="h-6 w-6 rounded-full" 
@@ -357,7 +352,7 @@ function App() {
                       opacity: 0.5
                   }} 
               />
-          </div>
+          </div> */}
       </div>
       {/* Footer */}
 
