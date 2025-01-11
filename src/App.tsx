@@ -122,7 +122,7 @@ function App() {
                       Hi, my name is Daniel Malychko and I am a highly ambitious, self-motivated and driven software engineer.
                     </div >
                     <div className="text-lg pb-4">
-                      I graduated from the IHK, Hamburg in 2025 as Computer Science Expert Subject Area: Software Development and have been working in this field ever since.
+                      In 2025 I graduated with a degree in software development from the IHK Hamburg. Since then I have been designing digital worlds and living my dream of technology and creativity.
                     </div >
                     <div className="text-lg pb-4">
                       I have a wide range of hobbies and passions that keep me busy. From reading, sports, travelling to creating wonderful software, I am always looking for new experiences and love to keep myself busy and learn new things.
