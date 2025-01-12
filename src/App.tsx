@@ -87,7 +87,7 @@ function App() {
 
       {/* Header */}
       <header id="home" className="grid grid-cols-1 md:grid-cols-2 css-1ytyau7">
-        <img src="Assets/headshot.png" className="p-20 md:p-32" />
+        <img src="Assets/headshot.png" alt="a foto of a person" className="p-20 md:p-32" />
         <div className="text flex flex-col items-center text-center md:text-start md:items-start gap-5 justify-center p-20 md:p-32 md:pl-10">
           <div className="text-7xl font-bold">Hi, I'm Daniel!</div>
           <div className="text-xl text-gray-300">
@@ -150,7 +150,7 @@ function App() {
               <a className="btn-new secondary-dark"><span className="css-17qgsod">C#</span></a>
               <a className="btn-new secondary-dark"><span className="css-17qgsod">PHP</span></a>
             </div>
-            <img src="/Assets/hero-image.png" className="p-20" />
+            <img src="/Assets/hero-image.png" alt="a woman with one hand in the air greeting" className="p-20" />
           </div>
 
         </div>
@@ -194,7 +194,7 @@ function App() {
               <div className="tracing css-rvu8qh evjj7za0 snipcss0-3-3-23">
                   <div className="background snipcss0-4-23-24"><span className="css-1lbs7b evjj7za2 snipcss0-5-24-25">Loading image for Find and fix the problem, no matter where it occurs media</span></div>
                   <div className="arcade active css-1jxtjvn eh3x5v20 snipcss0-4-23-26">
-                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe src="https://player.vimeo.com/video/1045059130?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer; encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
+                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe title="thirdProject"  src="https://player.vimeo.com/video/1045059130?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer; encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
                   </div>
               </div>
           </div>
@@ -205,7 +205,7 @@ function App() {
               passwordManager is a simple Python application that helps you securely store and manage your passwords.
             </div>
             <div className="flex">
-              <a href="https://github.com/DanEm95/passwordManager" target="_blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
+              <a href="https://github.com/DanEm95/passwordManager" aria-label="Read more about Password Manager" target="_blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" alt="a logo with a cat" className="h-10 w-10 rounded-full" /></a>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
@@ -246,7 +246,7 @@ function App() {
               <div className="tracing css-rvu8qh evjj7za0 snipcss0-3-3-23">
                   <div className="background snipcss0-4-23-24"><span className="css-1lbs7b evjj7za2 snipcss0-5-24-25">Loading image for Find and fix the problem, no matter where it occurs media</span></div>
                   <div className="arcade active css-1jxtjvn eh3x5v20 snipcss0-4-23-26">
-                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe src="https://player.vimeo.com/video/1045072963?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer;  encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
+                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe title="firstProject" src="https://player.vimeo.com/video/1045072963?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer;  encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
                   </div>
               </div>
           </div>
@@ -258,8 +258,8 @@ function App() {
               blogWithUsers is a Python web application that enables global communication where users share thoughts, stories and connections through an intuitive digital interface.
             </div>
             <div className="flex">
-              <a href="https://github.com/DanEm95/blogWithUsers" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
-              <a href="https://my-amazing-blog-with-users.onrender.com/" target="__blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+              <a href="https://github.com/DanEm95/blogWithUsers" aria-label="Read more about blog With Users" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" alt="a logo with a cat" className="h-10 w-10 rounded-full" /></a>
+              <a href="https://my-amazing-blog-with-users.onrender.com/" aria-label="Read more about blog With Users" target="__blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg></a>
             </div>
@@ -300,7 +300,7 @@ function App() {
               <div className="tracing css-rvu8qh evjj7za0 snipcss0-3-3-23">
                   <div className="background snipcss0-4-23-24"><span className="css-1lbs7b evjj7za2 snipcss0-5-24-25">Loading image for Find and fix the problem, no matter where it occurs media</span></div>
                   <div className="arcade active css-1jxtjvn eh3x5v20 snipcss0-4-23-26">
-                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe src="https://player.vimeo.com/video/1045286922?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer;  encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
+                      <div className="eh3x5v21 css-18nadfl e9fbm7j2 snipcss0-5-26-27"><iframe title="secondProject" src="https://player.vimeo.com/video/1045286922?autoplay=1&amp;dnt=1&amp;background=1" allow="accelerometer;  encrypted-media; fullscreen; gyroscope; picture-in-picture" loading="lazy" className="css-srctpx e9fbm7j1 snipcss0-6-27-28"></iframe></div>
                   </div>
               </div>
           </div>
@@ -312,7 +312,7 @@ function App() {
                 The php-mysql-website is a MVC3 based web application that uses PHP for backend logic and XAMPP MySQL-PDO for database management, with structured user and admin areas while still under development.
               </div>
               <div className="flex">
-                <a href="https://github.com/DanEm95/php-mysql-website" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" className="h-10 w-10 rounded-full" /></a>
+                <a href="https://github.com/DanEm95/php-mysql-website" aria-label="Read more about PHP MYSql Website" target="__blank"><img src="https://s.yimg.com/fz/api/res/1.2/BMbAkWtLKPyUuTo9jK0WNQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/1a0d1629-cdce-359c-81fe-b83c39d6c2da/t_500x300" alt="a logo with a cat" className="h-10 w-10 rounded-full" /></a>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
